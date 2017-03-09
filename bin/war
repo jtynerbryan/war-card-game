@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/war.rb'
+
+game = War.new
+puts "Welcome to War: The Card Game"
+game.full_game
