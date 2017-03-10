@@ -21,7 +21,7 @@ class War
 		@rounds = 1
 	end
 
-	# create a full deck by pushing each card in @card to the @deck 4 times
+	# create a full deck by pushing each card in @cards to the @deck 4 times
 
 	def build_deck 
 		@cards.each do |c|
@@ -88,7 +88,7 @@ class War
 		end
 	end
 
-	# when the cards played are not equal, push them the player who has the higher value card
+	# when the cards played are not equal, push them to the player who has the higher value card
 
 	def battle 
 		if  @player_one[0]['numeric_value'] > @player_two[0]['numeric_value']
@@ -106,8 +106,8 @@ class War
 		end
 	end
 
-	# if the cards played are of equal value, play a card each face down, then compare the next two cards.
-	# if their of equal value again, repeat #war, otherwise push the pile to the playe with the higher value card
+	# if the cards played are of equal value, play a card each face down. then compare the next two cards.
+	# if their of equal value again, repeat #war, otherwise push the pile to the player with the higher value card
 
 	def war 
 		face_down
